@@ -10,14 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "ace-builds": "^1.32.6",
+    "monaco-themes": "^0.4.4",
     "react": "^18.2.0",
+    "react-ace": "^10.1.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1"
+    "react-file-icon": "^1.4.0",
+    "react-icons": "^5.0.1",
+    "thememirror": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "@types/react-file-icon": "^1.0.4",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
