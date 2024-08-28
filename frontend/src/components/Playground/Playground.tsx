@@ -12,16 +12,12 @@ function Playground() {
   const [Code, setCode] = useState("");
   const [mode, setmode] = useState("c_cpp");
 
-
-  const onChange = () => {
-    
-  }
   return (
     <div className="Main_Playground flex flex-col w-full h-full bg-gradient-to-br from-[#2B4162] to-[#12100E]">
       <TopBar />
       <div className="Play_Body h-full flex justify-between overflow-hidden">
         <LeftPanel />
-        <Editor Code={Code}  onChange={setCode} mode={mode}/>
+        <Editor mode={mode}/>
         {/* <Editor Code={Code}  onChange={setCode} mode="C++"/> */}
         <RightPanel />
       </div>

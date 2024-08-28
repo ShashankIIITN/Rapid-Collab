@@ -1,11 +1,15 @@
+import { useState, useEffect } from "react"
 import FolderViwer from "./FolderViwer"
 import { defaultStyles } from "react-file-icon"
+import { useDispatch, useSelector } from "react-redux"
 
 type TEntry = {
   name: string,
   ext: keyof typeof defaultStyles,
   children?: TEntry[]
 }
+
+
 
 const TData = {
   Children: [
@@ -60,14 +64,14 @@ const TData = {
   ]
 }
 function LeftPanel() {
+ 
   return (
     <div className='Left_Panel w-1/5 bg-transparent '>
       <div className='Left_Panel_bar w-full h-10 bg-slate-800'></div>
-
       <div className="Folder_Structure h-[80%]">
         {TData.Children.map(el => {
           return <div className="px-2 pt-2">
-            <FolderViwer entry={el as TEntry} depth={0} />
+            <FolderViwer entry={el as TEntry} depth={0}  />
           </div>
         })}
       </div>
